@@ -1,51 +1,67 @@
-<!doctype html>
-    <html>
-        <head>
-            <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-            <link rel="stylesheet" href="./style.css"/>
-		<meta charset="UTF-8" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Deborah Beauty</title>
-        </head>
-        <body>
-            <div class="hero-section">
-        <nav class="navbar" role="navigation" aria-label="main-navigation">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deborah Beauty</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>Deborah Beauty</strong>
+                </a>
             </div>
-                   
-  <div class="navbar-menu">
-    <div class="navbar-start">
-        <a class="navbar-item" href="index.html">Menu</a>
-      <a class="navbar-item" href="nos prestation.html" target="_blank">Les Prestations</a>
-      <a class="navbar-item" href="nos techniques.html">Les Techniques</a>
-      <a class="navbar-item" href="nos prix.html">Tarifs</a>
-    </div>
-  </div>
 
-            </nav>
-             <img src="2.png" alt="Image décorative sous la navbar" class="navbar-image">
-                <footer class="footer">
-                    <div class="container-footer">
-                        <div class="footer-content">
-                            <div class="footer-contact">
-                                <h2>Mes Contacts</h2>
-                                <p>
-                                    Téléphone: 06.50.47.30.47<br>
-                                    Instagram: beleza_deborah<br>
-                                    Email: deborahbeleza8@gmail.com<br>
-                                </p>
-                            </div>
-                        </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Menu</a>
+                    <a class="navbar-item" href="nos-prestation.html" target="_blank">Les Prestations</a>
+                    <a class="navbar-item" href="nos-techniques.html">Les Techniques</a>
+                    <a class="navbar-item" href="nos-prix.html">Tarifs</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <!-- <button id="switch" class="button is-small is-info">🌙 Mode sombre</button> -->
                     </div>
-                </footer>
-                <script>
-    const switchTheme = document.querySelector("#switch");
+                </div>
+            </div>
+        </nav>
 
-    switchTheme.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-    });
-  </script>
+    </header>
+    <div class="hero">
+        <figure class="image is-3by1">
+            <img src="images/2.png" alt="Image décorative sous la navbar" />
+        </figure>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <h2 class="title is-5">Mes Contacts</h2>
+            <p>
+                📞 Téléphone : 06.50.47.30.47<br>
+                📸 Instagram : <a href="https://instagram.com/beleza_deborah" target="_blank">@beleza_deborah</a><br>
+                ✉️ Email : <a href="mailto:deborahbeleza8@gmail.com">deborahbeleza8@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const switchTheme = document.querySelector("#switch");
+        switchTheme.addEventListener("click", function () {
+            document.body.classList.toggle("has-background-dark");
+            document.body.classList.toggle("has-text-white");
+        });
+    </script>
 </body>
-    </html>
+</html>

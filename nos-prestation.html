@@ -1,148 +1,170 @@
-<!doctype html>
-    <html>
-        <head>
-            <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-            <link rel="stylesheet" href="./style.css"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-		<meta charset="UTF-8" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Deborah Beauty</title>
-        </head>
-        <body>
-            <div class="hero-section">
-        <nav class="navbar" role="navigation" aria-label="main-navigation">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deborah Beauty</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>Deborah Beauty</strong>
+                </a>
             </div>
-                   
-  <div class="navbar-menu">
-    <div class="navbar-start">
-        <a class="navbar-item" href="index.html">Menu</a>
-      <a class="navbar-item" href="nos prestation.html" target="_blank">Les Prestations</a>
-      <a class="navbar-item" href="nos techniques.html">Les Techniques</a>
-      <a class="navbar-item" href="nos prix.html">Tarifs</a>
-    </div>
-  </div>
 
-            </nav>
-            <img src="2.png" alt="Image décorative sous la navbar" class="navbar-image">
-       <div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Epilations</p>
-    <button  class="card-header-icon toggle-button" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-    <div class="card-content is-hidden">
-    <div class="content">
-      <p>Epilation Sourcils 
-    <br> Epilation Lèvres
-    <br> Epilation Menton
-    <br> Epilation Narines
-    <br> Epilation Aisselles
-    <br> Epilation Bras et 1/2 Bras
-    <br> Epilation Jambes entières et 1/2 Jambes
-    <br> Epilation Maillot simple, échancré, brésilien, intégral
-    <br> Epilation Dos et ventre
-      </p>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Modelages</p>
-    <button class="card-header-icon toggle-button" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-    <div class="card-content is-hidden">
-    <div class="content">
-      <p>Modelage Corps 30min, 1h
-    <br> Modelage Visage 30min, 1h
-    <br> Modelage Mains 15min
-    <br> Modelage Pieds 15min 
-    <br> Modelage Cuir chevelu 15min 
-      </p>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Soins</p>
-    <button  class="card-header-icon toggle-button" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-    <div class="card-content is-hidden">
-    <div class="content">
-      <p>Gommage corps 20min 
-    <br>Soin Visage 60min Hydratant, Matifiant, Anti-âge
-    <br> Soin des mains 45min
-    <br> Soin des pieds 45min 
-      </p>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Sourcils</p>
-    <button class="card-header-icon toggle-button" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-    <div class="card-content is-hidden">
-    <div class="content">
-      <p>Entretien Sourcils
-    <br> Création Sourcils
-    <br> Colorations Sourcils
-    <br> Browlamination 
-      </p>
-    </div>
-  </div>
-</div>
-               <footer class="footer">
-                    <div class="container-footer">
-                        <div class="footer-content">
-                            <div class="footer-contact">
-                                <h2>Mes Contacts</h2>
-                                <p>
-                                    Téléphone: 06.50.47.30.47<br>
-                                    Instagram: beleza_deborah<br>
-                                    Email: deborahbeleza8@gmail.com<br>
-                                </p>
-                            </div>
-                        </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Menu</a>
+                    <a class="navbar-item" href="nos-prestation.html" target="_blank">Les Prestations</a>
+                    <a class="navbar-item" href="nos-techniques.html">Les Techniques</a>
+                    <a class="navbar-item" href="nos-prix.html">Tarifs</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <!-- <button id="switch" class="button is-small is-info">🌙 Mode sombre</button> -->
                     </div>
-                </footer>
-                <script>
-  // Sélectionne tous les boutons avec la classe .toggle-button
-  const toggleButtons = document.querySelectorAll('.toggle-button');
+                </div>
+            </div>
+        </nav>
 
-  toggleButtons.forEach(function(button) {
-    button.addEventListener('click', function () {
-      // Trouve la .card-content associée au bouton
-      const card = button.closest('.card');
-      const content = card.querySelector('.card-content');
-      content.classList.toggle('is-hidden');
+    </header>
+    <div class="hero">
+        <figure class="image is-3by1">
+            <img src="images/2.png" alt="Image décorative sous la navbar" />
+        </figure>
+    </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="section">
+    <div class="container">
+      <!-- Carte : Épilations -->
+      <div class="card mb-4">
+        <header class="card-header">
+          <p class="card-header-title">Épilations</p>
+          <button class="card-header-icon toggle-button" aria-label="Voir plus">
+            <span class="icon"><i class="fas fa-angle-down"></i></span>
+          </button>
+        </header>
+        <div class="card-content is-hidden">
+          <div class="content">
+            <ul>
+              <li>Épilation Sourcils</li>
+              <li>Épilation Lèvres</li>
+              <li>Épilation Menton</li>
+              <li>Épilation Narines</li>
+              <li>Épilation Aisselles</li>
+              <li>Épilation Bras / 1/2 Bras</li>
+              <li>Épilation Jambes / 1/2 Jambes</li>
+              <li>Épilation Maillot : simple, échancré, brésilien, intégral</li>
+              <li>Épilation Dos et Ventre</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte : Modelages -->
+      <div class="card mb-4">
+        <header class="card-header">
+          <p class="card-header-title">Modelages</p>
+          <button class="card-header-icon toggle-button" aria-label="Voir plus">
+            <span class="icon"><i class="fas fa-angle-down"></i></span>
+          </button>
+        </header>
+        <div class="card-content is-hidden">
+          <div class="content">
+            <ul>
+              <li>Modelage Corps – 30 min / 1h</li>
+              <li>Modelage Visage – 30 min / 1h</li>
+              <li>Modelage Mains – 15 min</li>
+              <li>Modelage Pieds – 15 min</li>
+              <li>Modelage Cuir Chevelu – 15 min</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte : Soins -->
+      <div class="card mb-4">
+        <header class="card-header">
+          <p class="card-header-title">Soins</p>
+          <button class="card-header-icon toggle-button" aria-label="Voir plus">
+            <span class="icon"><i class="fas fa-angle-down"></i></span>
+          </button>
+        </header>
+        <div class="card-content is-hidden">
+          <div class="content">
+            <ul>
+              <li>Gommage Corps – 20 min</li>
+              <li>Soin Visage – 60 min (Hydratant, Matifiant, Anti-âge)</li>
+              <li>Soin des Mains – 45 min</li>
+              <li>Soin des Pieds – 45 min</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte : Sourcils -->
+      <div class="card mb-4">
+        <header class="card-header">
+          <p class="card-header-title">Sourcils</p>
+          <button class="card-header-icon toggle-button" aria-label="Voir plus">
+            <span class="icon"><i class="fas fa-angle-down"></i></span>
+          </button>
+        </header>
+        <div class="card-content is-hidden">
+          <div class="content">
+            <ul>
+              <li>Entretien Sourcils</li>
+              <li>Création Sourcils</li>
+              <li>Coloration Sourcils</li>
+              <li>Browlamination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <h2 class="title is-5">Mes Contacts</h2>
+      <p>
+        📞 Téléphone : 06.50.47.30.47<br />
+        📸 Instagram : <a href="https://instagram.com/beleza_deborah" target="_blank">@beleza_deborah</a><br />
+        ✉️ Email : <a href="mailto:deborahbeleza8@gmail.com">deborahbeleza8@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Accordéons
+    document.querySelectorAll('.toggle-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.card');
+        const content = card.querySelector('.card-content');
+        content.classList.toggle('is-hidden');
+        button.querySelector('.fas').classList.toggle('fa-angle-down');
+        button.querySelector('.fas').classList.toggle('fa-angle-up');
+      });
     });
-  });
-</script>
 
-                <script>
+    // Mode sombre
     const switchTheme = document.querySelector("#switch");
-
     switchTheme.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("has-background-dark");
+      document.body.classList.toggle("has-text-white");
     });
   </script>
 </body>
-    </html>
+</html>
